@@ -2,21 +2,44 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge, chrome=1"> <!-- Открыть в IE последней версии. Убираем эмуляцию браузера в IE. Эмуляция WebKit в IE-->
+	<meta name="viewport" content="width=960">  <!--Тег для корректного отображения контента на мобильных устройствах(в контент пишем кол-во пиксилей + 20-30px(Чтобы не было плотно) А для адаптива оставляем width=device-width. <meta name="viewport" content="width=device-width">-->
 	<title>Document</title>
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/teststyle.css">
+	<!--<script src="js/modernizr-custom.js"></script>-->   <!--Скрипт для поддержки старых браузеров, ссылка : https://modernizr.com/-->
+
+
 </head>
 <body>
-	
-	Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Которой над взобравшись дорогу рыбными свой деревни, парадигматическая она сбить даль щеке! Прямо мир агенство о предложения буквенных реторический это.
+	<!--Conditional Comments - отображаются в браузере в зависимости от его версии.-->
+	<!--[if lt IE 8]>
+		<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a>
+	<![endif]-->
+	<wrapper>
+        <div class="maincontent">
+            <div class="container">
+                <header class="header">
+                    <div class="container">  <!--блок для выравнивания по центру-->
 
-	<p><img src="img/1.jpg" alt="Alt"></p>
-	<p><img src="img/2.jpg" alt="Alt"></p>
-	<p><img src="img/3.jpg" alt="Alt"></p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deleniti dolorem error et ex harum id nisi non obcaecati qui? </p>
-	<p>thirdcommit</p>
-	<script src="js/libs.min.js"></script>
+                    </div>
+                </header>
+                <div class="content">
+                    <div class="conteiner">
 
+                    </div>
+                </div>
+            </div>
+        </div>
+	</wrapper>
+	<footer class="footer">
+        <div class="container">
+
+        </div>
+	</footer>
+
+
+<!--Scripts-->
+<script src="js/libs.min.js"></script> <!--Минимизированные галпом(его библиотекой)-->
 </body>
 </html>

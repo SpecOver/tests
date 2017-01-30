@@ -1,0 +1,23 @@
+1) Зайти в файл TemplateFirst\app\sass\main.sass, поменять настройки для шаблона, такие как:
+    $min-width: 960px /* // Длина контента +20-30px */
+    $height-footer: 50px /*  // Высота футера; для прибития*/
+    $container-width: 940px /*   // Изначальная (настоящая) длина контента  */
+2) Подключить шрифты:
+3)
+
+4)
+5)
+
+Фичи:
+1) Миксин для социалок для класса .socials__link( нужнны картинки с именем элементов массива vk.png...)
+
+    $socials: vk, tw, fb;
+    @each $social in $socials{
+        .socials__link#{$social} {
+            background: url('/img/icons/#{$social}.png') 0 0 repeat;
+
+            &:hover{
+             background: url('/img/iconshover/#{$social}.png') 0 0 repeat;
+             }
+        }
+    }

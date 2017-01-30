@@ -1,2 +1,75 @@
+@charset "UTF-8";
+@import url(../css/normalize.css);
+/* // START adjustment.css  сновные настройки */
+/* // Длина контента +20-30px */
+/*  // Высота футера; для прибития*/
+/*   // Изначальная (настоящая) длина контента  */
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
-  background-color: pink; }
+  font-size: 16px;
+  line-height: 1.42;
+  font-smoothing: antialiased;
+  font-size: 16px;
+  color: #272727;
+  background: red;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  min-width: 960px;
+}
+
+.wrapper:after {
+  content: "";
+  display: block;
+  height: 50px;
+  overflow: hidden;
+}
+
+.maincontent {
+  padding-bottom: 50px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+}
+
+/* //END adjustment.css сновные настройки */
+/*  // START Clearfix for footer */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clearfix_two:before, .clearfix_two:after {
+  content: "";
+  display: table;
+}
+
+.clearfix_two:after {
+  clear: both;
+}
+
+/*  // END Clearfix for footer */

@@ -1,3 +1,65 @@
+// vars
+$min-width: 960px /* // Длина контента +20-30px */
+$height-footer: 50px /*  // Высота футера; для прибития*/
+$container-width: 940px /*   // Изначальная (настоящая) длина контента  */
+
+/* import styles  */
+/* @import  "../css/_misc/fonts.scss" */
+/* @import "../css/_misc/normalize.scss" */
+/* @import "../css/_misc/mixins.scss"  */
+
+/*Применить шрифт include fira(bold) */
+
+/* @extend %clearfix */
+
+/* // START adjustment.scss  Основные настройки */
+/* adjustment style*/
+body, html
+	width: 100%
+	height: 100%
+
 body
-	background-color: pink
-	
+	font-size: 16px
+	line-height: 1.42
+	-webkit-font-smoothing: antialiased  /*  // сглаивание шрифтов для вебкита */
+	font-size: 16px
+	color: #272727
+	background: red
+
+
+.wrapper
+	min-height: 100%
+	overflow: hidden
+	position: relative
+	min-width: $container-width + 20px  		/* // wrapper-width-content меняем ширину контента */
+	&:after     				/* // пустое пространство для прибития футера */
+		content: ""
+		display: block
+		height: $height-footer
+		overflow: hidden
+
+.maincontent  /* // пространство для футера */
+	padding-bottom: $height-footer /*  //пространство от низа, в главном окне */
+
+.container
+	width: $width-content
+	margin: 0 auto
+
+li
+	list-style: none
+
+ul
+	padding: 0
+	margin: 0
+
+footer
+	height: $height-footer
+	width: 100%
+    margin-top: -$height-footer
+    position: relative
+    min-width: $container-width + 20px
+
+/* //END adjustment.scss сновные настройки */
+
+
+

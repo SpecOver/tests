@@ -1,0 +1,16 @@
+// Mixins
+
+%clearfix {
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+%inlineblock{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
